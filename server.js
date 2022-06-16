@@ -8,7 +8,7 @@ var nodemailer = require('nodemailer');//can help to send emails
 
 let db,
     dbConnectionStr = process.env.DB_STRING,
-    dbName = 'sele_website'
+    dbName = 'gooutstcloud'
 
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     .then(client => {
@@ -25,12 +25,12 @@ app.use(express.json())
 app.get('/',(request, response)=>{
     db.collection('feedback').find().sort({likes: -1}).toArray()
     .then(data => {
-        response.render('index.ejs', { info: data })
+        response.render('index2.ejs', { info: data })
     })
     .catch(error => console.error(error))
 })
 
-app.post('/addRapper', (request, response) => {
+app.post('/addRapper', (request, response) => {//action in form atribute
     db.collection('feedback').insertOne({stageName: request.body.stageName,
     birthName: request.body.birthName, likes: 0})
     .then(result => {
