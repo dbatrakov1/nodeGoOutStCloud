@@ -1,0 +1,28 @@
+{
+  "name": "rap-name-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^3.7.3",
+    "nodemailer": "^6.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbatrakov1/feedBackThird.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dbatrakov1/feedBackThird/issues"
+  },
+  "homepage": "https://github.com/dbatrakov1/feedBackThird#readme"
+}
