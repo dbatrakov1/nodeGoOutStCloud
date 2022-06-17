@@ -23,15 +23,22 @@ app.use(express.json())
 
 
 app.get('/',(request, response)=>{
-    db.collection('feedback').find().sort({likes: -1}).toArray()
+    db.collection('comment').find().sort({likes: -1}).toArray()
     .then(data => {
         response.render('index2.ejs', { info: data })
     })
     .catch(error => console.error(error))
 })
+app.get('/comments',(request, response)=>{
+    db.collection('comment').find().sort({likes: -1}).toArray()
+    .then(data => {
+        response.render('index3.ejs', { info: data })
+    })
+    .catch(error => console.error(error))
+})
 
-app.post('/addRapper', (request, response) => {//action in form atribute
-    db.collection('feedback').insertOne({stageName: request.body.stageName,
+app.post('/addComment', (request, response) => {//action in form atribute
+    db.collection('comment').insertOne({stageName: request.body.stageName,
     birthName: request.body.birthName, likes: 0})
     .then(result => {
         //send email+++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -59,7 +66,7 @@ app.post('/addRapper', (request, response) => {//action in form atribute
           });
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        console.log('Rapper Added')
+        console.log('Comment Added')
         response.redirect('/')
     })
     .catch(error => console.error(error))
