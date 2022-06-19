@@ -19,22 +19,23 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="logo">
+					<header>
+						<!-- <div class="logo">
 							<span class="fa fa-crown fa-2x"></span>
-						</div>
+						</div> -->
+						<div class="bottomSpace"><h1>What is your favorite place in St Cloud?</h1></div>
 						<div class="content">
 							<div><!-- class="inner" -->
 								<ul class="rappers noBullets">
 									<% for(let i=0; i < info.length; i++) {%>
-										<li class="comment">
+										<li class="comment lineUnder">
 											<h3><%= info[i].stageName %></h3>
 											<p class="comment"><%= info[i].birthName %></p>
 											<!-- <span><%= info[i].likes %></span>
 											<span class='fa fa-thumbs-up'></span>
 											<span class='fa fa-trash'></span> -->
 										</li>
-										<br>
+										<!-- <br> -->
 									<% } %>
 									</ul>
 									<form method="post" action="/addComment">
@@ -133,7 +134,7 @@
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="submit" value="" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
