@@ -5,6 +5,7 @@
 */
 
 //breakfast
+apiRequestBreakfast()
 document.querySelector('#buttonBreakfast').addEventListener('click', apiRequestBreakfast)
 async function apiRequestBreakfast(){
     try{
@@ -19,6 +20,7 @@ async function apiRequestBreakfast(){
     }
 }
 //lunch
+apiRequestLunch()
 document.querySelector('#buttonLunch').addEventListener('click', apiRequestLunch)
 async function apiRequestLunch(){
     try{
@@ -34,6 +36,7 @@ async function apiRequestLunch(){
 }
 
 //dinner
+apiRequestDinner()
 document.querySelector('#buttonDinner').addEventListener('click', apiRequestDinner)
 async function apiRequestDinner(){
     try{

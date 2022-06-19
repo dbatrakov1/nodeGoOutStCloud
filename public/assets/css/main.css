@@ -1669,3 +1669,9 @@ input, select, textarea {
 	border-bottom: 1px solid white;
 	padding-top: 2em;
 }
+.paddingUnder{
+	padding-bottom: 1em;
+	text-decoration: none;
+	/* color: inherit */
+	border: none;
+}
