@@ -1,5 +1,5 @@
 # nodeGoOutStCloud
-It is a resturant adviser API. 
+It is a resturant adviser APP. 
 
 **Link to project:** https://www.gooutstcloud.com/
 ## How It's Made:
