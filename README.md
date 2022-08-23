@@ -1,5 +1,6 @@
 # nodeGoOutStCloud
 It is a resturant adviser APP. 
+
 ![alt tag](https://github.com/dbatrakov1/nodeGoOutStCloud/blob/main/goOutStCloud.gif)
 
 **Link to project:** https://www.gooutstcloud.com/
